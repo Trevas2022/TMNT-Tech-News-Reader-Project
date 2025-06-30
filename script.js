@@ -49,3 +49,4 @@ categoryList.addEventListener('click', (e) => {
     fetchNews(e.target.dataset.category);
   }
 });
+
