@@ -1,0 +1,134 @@
+:root {
+  --royal-blue: #1e3a8a;
+  --royal-purple: #5a189a;
+  --ruby-red: #9b111e;
+  --orange: #f97316;
+  --dark-bg: #1a1a1a;
+  --light-text: #f1f1f1;
+  --gray-text: #a0a0a0;
+  --card-bg: #2a2a2a;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
+
+.app-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: var(--royal-purple);
+  color: var(--light-text);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--orange);
+}
+
+#searchInput {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--card-bg);
+  color: var(--light-text);
+}
+
+#categoryList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#categoryList li {
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#categoryList li.active,
+#categoryList li:hover {
+  background: var(--ruby-red);
+  color: #fff;
+}
+
+.content {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  background-color: var(--dark-bg);
+}
+
+.content header h2 {
+  margin-top: 0;
+  color: var(--royal-blue);
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.news-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.news-card h3 {
+  color: var(--orange);
+  margin: 0 0 0.5rem;
+}
+
+.news-card p {
+  font-size: 0.9rem;
+  color: var(--gray-text);
+  margin-bottom: 0.5rem;
+}
+
+.news-card a {
+  color: var(--royal-blue);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.news-card a:hover {
+  color: var(--ruby-red);
+}
+
+/* Sidebar with semi-transparent background */
+.sidebar {
+  background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)),
+              url('assets/TMNTbackground4.jpg') center/cover no-repeat;
+  color: var(--light-text);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Main content with semi-transparent background */
+.content {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('assets/teenage-mutant-ninja-turtles-the-last-ronin-ii-re-evolution-2-ivan-tao-exclusive-virgin-cover-b-lightning-comix.webp') center/cover no-repeat;
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}

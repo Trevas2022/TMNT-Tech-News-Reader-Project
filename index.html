@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech News Reader - TMNT Last Ronin Theme</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <aside class="sidebar">
+        <h1>📰 Tech News</h1>
+        <input type="text" id="searchInput" placeholder="Search articles..." />
+        <ul id="categoryList">
+          <li data-category="technology" class="active">Technology</li>
+          <li data-category="gadgets">Gadgets</li>
+          <li data-category="ai">AI</li>
+          <li data-category="security">Security</li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <header>
+          <h2>Latest News</h2>
+        </header>
+        <section id="newsContainer" class="news-container">
+          <!-- News cards inserted here -->
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
